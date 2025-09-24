@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
-import User from './models/User.js';
+import User from './User.js';
 
 
 dotenv.config();
@@ -71,3 +71,4 @@ app.delete('/users/:id', async (req, res) => {
 
 /* ----------- START SERVER ----------- */
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
